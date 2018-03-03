@@ -5,8 +5,12 @@ $pass = '';
 
 $db = 'bookingsdb';
 
-$db = new mysqli('localhost', $user, $pass, $db) or die("Unable to connect");
+//Connect to MySQL
+$db = new mysqli('localhost', $user, $pass, $db);
 
-echo "Good work";
+//Check connection
+if ($mysqli->connect_error) {
+  die('Connect Error: ' . $mysqli->connect_errno . ': ' . $mysqli->connect_error);
+}
 
 ?>﻿
