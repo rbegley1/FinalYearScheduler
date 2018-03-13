@@ -68,23 +68,7 @@
     <div class="right">
       <h1 class="heading">Fill out this form to make your booking!</h1>
 
-      <form>
-        Club Name: <br> <input type="text" name="clubname" value="">
-        <br>
-        County: <br> <input type="text" name="county" value="">
-        <br>
-        Club Address: <br> <input type="text" name="address" value="Enter Address Here..">
-        <br>
-        Draw Type: <br> <input type="radio" name="drawtype" value="local"> Local
-                   <input type="radio" name="drawtype" value="grand"> Grand
-        <br>
-        Start Date: <br> <input type="date" name="startdate" value="">
-        <br>
-        End Date: <br> <input type="date" name="enddate" value="">
-        <br>
-        <input type="submit" name="submitbutton" value="Place Booking">
-
-      </form>
+      <?php  include('bookings.php'); ?>
 
 
     </div>
