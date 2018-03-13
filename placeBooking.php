@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 }
 
 $sql = "INSERT INTO bookings (ClubName, County, Address, Email, StartDate, EndDate)
-VALUES ('$clubname', '$county', '$address', '$email', '$sdate', '$enddate')";
+VALUES ('$clubname', '$county', '$address', '$email', '$startdate', '$enddate')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
