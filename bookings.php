@@ -7,9 +7,9 @@
   <br>
   Email: <br> <input type="text" name="email">
   <br>
-  <!-- Draw Type: <br> <input type="radio" name="drawtype" value="local"> Local
+  Draw Type: <br> <input type="radio" name="drawtype" value="local"> Local
              <input type="radio" name="drawtype" value="grand"> Grand
-  <br> -->
+  <br>
   Start Date: <br> <input type="date" name="startdate">
   <br>
   End Date: <br> <input type="date" name="enddate">
