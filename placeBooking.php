@@ -10,6 +10,9 @@ $address = $_POST['address'];
 $drawtype = $_POST['drawtype'];
 $startdate = $_POST['startdate'];
 $enddate = $_POST['enddate'];
+// $lat = $_POST['lat'];
+// $long = $_POST['long'];
+
 
 
 // Create connection
@@ -19,18 +22,27 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO clubs (ClubName, Address)/*, Email, DrawType, StartDate, EndDate*/
-VALUES ('$clubname', '$address')";/*, '$email', '$drawtype', '$startdate', '$enddate'*/
 
+$result = mysqli_query($conn, "SELECT * FROM clubs WHERE ClubName='$clubname'");
+$rowcount = mysqli_num_rows($result);
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+if($rowcount > 0) {
+  mysqli_query($conn, "UPDATE clubs SET Address= '$address' WHERE ClubName='$clubname'");
+}
+else {
+  mysqli_query($conn, "INSERT INTO clubs(ClubName, Address) VALUES ('$clubname', '$address')");
 }
 
+//If row exists select for form, if not insert to clubs table
+
+ if ($rowcount === 0) {
+    echo "New record created successfully";
+  } else {
+      echo "The record has been updated";
+    }
+
 $sql = "INSERT INTO draws (ClubID, DrawType, StartDate, EndDate)
-VALUES (1, '$drawtype', '$startdate', '$enddate')";
+VALUES ('$conn->insert_id', '$drawtype', '$startdate', '$enddate')";
 
 $conn->query($sql);
 
