@@ -3,73 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>GAA Scheduler</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5kdoVwkdSvWyl30bYYROScoIVXQfy5d0&callback=initMap"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">GAA Ticket Scheduler</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#booking">Bookings</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+  <!-- Navbar for top of page to navigate between sections -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">GAA Ticket Scheduler</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#booking">Bookings</a>
+      <a class="nav-item nav-link" href="#about">About</a>
+      <a class="nav-item nav-link disabled" href="#contact">Contact Us</a>
     </div>
-  </nav>
-
-
-
+  </div>
+</nav>
 
   <section id="home">
-    <div class="left">
-      <img class="gaalogo" src="images/gaaLogo.png">
-      <h1 class="heading">Using The Product!</h1>
-      <p class="spacing bold">Here is a step by step guide into how to use this product:</p>
-      <p class="spacing">1. Select the booking section on the top of the page.</p>
-      <p class="spacing">2. Once here begin to fill out all information on the booking form.</p>
-      <p class="spacing">3. Select your club and county which will be displayed on the map opposite.</p>
-      <p class="spacing">4. Now you can select the date and duration of your club draw, you will be told if this is available.</p>
-      <p class="spacing">5. Once this is decided you can submit your request and you will be sent an email for confirmation.</p>
-      <p class="spacing bold">Your slot is now booked, thanks for using our service.</p>
-      <p class="spacing bold">Good luck in your fundraiser, any feedback you may have is greatly appreciated.</p>
-      </div>
-      <div class="right">
 
-        <p>This is an example.</p>
-      </div>
     </section>
 
   <section id="booking">
-
-
-
-
     <!-- Id map which positions where map is placed on webpage -->
     <div id="map" class="left">
-
     </div>
-
-
-
-
 
     <div class="right">
       <h1 class="heading">Fill out this form to make your booking!</h1>
 
       <?php  include('bookings.php'); ?>
-
 
     </div>
   </section>
@@ -122,8 +93,7 @@
   </section>
 
 </body>
-  <!-- <script type="text/javascript" src="js/login.js"></script>
-  <script type="text/javascript" src="js/bookingForm.js"></script> -->
+  <script type="text/javascript" src="js/bookingForm.js"></script>
   <script type="text/javascript" src="js/initialiseMap.js"></script>
   <script type="text/javascript" src="js/distanceCalculation.js"></script>
 
