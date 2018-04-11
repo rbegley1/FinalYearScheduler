@@ -10,9 +10,6 @@ $address = $_POST['address'];
 $drawtype = $_POST['drawtype'];
 $startdate = $_POST['startdate'];
 $enddate = $_POST['enddate'];
-// $lat = $_POST['lat'];
-// $long = $_POST['long'];
-
 
 
 // Create connection
@@ -27,13 +24,17 @@ if ($conn->connect_error) {
 $result = mysqli_query($conn, "SELECT * FROM clubs WHERE ClubName='$clubname'");
 $rowcount = mysqli_num_rows($result);
 
+$coordinates = getcoordinates($address);
+
+$latitude =  $coordinates[0];
+$longitude = $coordinates[1];
+
 if($rowcount > 0) {
-  mysqli_query($conn, "UPDATE clubs SET Address= '$address' WHERE ClubName='$clubname'");
+  mysqli_query($conn, "UPDATE clubs SET Address= '$address', Latitude= '$latitude', Longitude= '$longitude' WHERE ClubName='$clubname'");
 }
 else {
-  mysqli_query($conn, "INSERT INTO clubs(ClubName, Address) VALUES ('$clubname', '$address')");
+  mysqli_query($conn, "INSERT INTO clubs(ClubName, Address, Latitude, Longitude) VALUES ('$clubname', '$address', $latitude, $longitude)");
 }
-
 
 //If row exists update, if not insert to clubs table
 if ($rowcount === 0) {
@@ -44,19 +45,6 @@ if ($rowcount === 0) {
 
 //Attempt at lat and long
 
-function getCoordinates($currentAdd){
-$currentAdd = str_replace(" ", "+", $address); // replace all the white space with "+" sign to match with google search pattern
-
-$url = "http://maps.google.com/maps/api/geocode/json?sensor=false&address=$currentAdd";
-
-$response = file_get_contents($url);
-
-$json = json_decode($response,TRUE); //generate array object from the response from the web
-
-return ($json['results'][0]['geometry']['location']['lat'].",".$json['results'][0]['geometry']['location']['lng']);
-
-print getCoordinates($currentAdd);
-}
 // $currentAdd = '$address';
 // $geocode = file_get_contents('http://maps.google.com/maps/api/geocode/json?address='.$currentAdd.'&sensor=false');
 // $output = json_decode($geocode);
@@ -73,4 +61,23 @@ $conn->query($sql);
 
 //Close connection
 $conn->close();
+
+function getcoordinates($currentAdd){
+  $encodedAdd = str_replace(" ", "+", $currentAdd); // replace all the white space with "+" sign to match with google search pattern
+
+  $url = "https://maps.google.com/maps/api/geocode/json?sensor=false&key=AIzaSyA5kdoVwkdSvWyl30bYYROScoIVXQfy5d0&address=$encodedAdd";
+
+  $response = file_get_contents($url);
+
+  $json = json_decode($response, TRUE); //generate array object from the response from the web
+
+  return array(
+    getcoordinate($json, 'lat'),
+    getcoordinate($json, 'lng')
+  );
+}
+
+function getcoordinate($json, $type) {
+  return $json['results'][0]['geometry']['location'][$type];
+}
 ?>
