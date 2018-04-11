@@ -25,7 +25,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">GAA Scheduler</a>
+        <img class="navbar-brand js-scroll-trigger logo" src="images/gaaLogo.png" href="#page-top"></img>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,29 +50,42 @@
 
     <header class="bg-primary text-white">
       <div class="container text-center">
-        <h1>Welcome to Scrolling Nav</h1>
-        <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+        <h1>Welcome to our GAA Ticket Scheduler</h1>
+        <p class="lead">Come and book your draw here first. Eliminate the competition from other clubs!</p>
       </div>
     </header>
 
-    <section id="home">
+    <section id="home" class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About this page</h2>
-            <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-            <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-            </ul>
-          </div>
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="images/grey.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Step 1</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="images/grey.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Step 2</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="images/grey.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Step 3</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
 
-    <section id="bookings" class="bg-light">
+    <section id="bookings" class="bg-secondary">
       <div class="container">
         <div class="row">
         <!-- Id map which positions where map is placed on webpage -->
@@ -89,50 +102,58 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h1 class="heading">Background!</h1>
-            <p class="spacing">I have created a scheduler which will be used for the sole purpose of organising the sale of
-              tickets within the GAA community. At this moment in time the area of ticket selling is chaotic and situations
-              occur where multiple clubs are selling tickets in the same areas, expecting people to buy from each of them.
-              In reality this doesn't happen because people don't like giving out money every night to different clubs. This
-              competition between clubs results in each draw selling less tickets as a lot of households will turn
-              ticket sellers away as they've already bought from another club in the same week.</p>
-            <p class="spacing">The idea of the product is to limit the conflicts currently happening in this area, and as a
-              result make ticket selling less of a hassle for those who voluntarily offer their services to do this. The aim
-              is that each club will have a fair run at selling tickets and promoting their fundraiser and in turn people
-              may be more welcoming in buying a ticket as there will be no constant flow of clubs visiting to ask for money
-              for a ticket they have no interest in.</p>
+          <div>
+            <div class="aboutLeft">
+            <h1 class="heading">Problem</h1>
+            <ul class="spacing" style="list-style-type: disc">
+              <li>There is too much competition between clubs selling tickets in the same areas.</li>
+              <li>This competition is resulting in less funds being raised by each club as more and more people will begin to turn ticket-sellers away.</li>
+              <li>These reasons make the idea of ticket-selling a more daunting experience, and less people are willing to volunteer their time for it.</li>
+              <li>Because of this fundraisers are less effective, but this competition can be eradicated.</li>
+            </ul>
           </div>
+          <div class="aboutRight">
+            <h1 class="heading">Solution</h1>
+            <ul class="spacing" style="list-style-type: disc">
+              <li>This system is proposing that the sale of tickets within the GAA be organised using a schedule.</li>
+              <li>This will allow each club to have a fair chance in promoting their fundraiser by booking their dates through this system.</li>
+              <li>This will ensure there are no conflicts between neighbouring clubs and that each fundraiser can be run smoothly.</li>
+              <li>No more competition when selling tickets and more effective fundraisers will be the result.</li>
+          </div>
+        </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="bg-secondary">
       <div class="container">
         <div class="row">
           <div class="left">
             <p>This is an example.</p>
           </div>
           <div class="right">
-            <h1 class="heading">Contact Us</h1>
-            <p>If you have any queries or concerns don't be afraid to get in contact and we will do our best to
+            <h1 class="headingLight">Contact Us</h1>
+            <p style="color: #FFFFFF">If you have any queries or concerns don't be afraid to get in contact and we will do our best to
               fix any problems you come across.</p>
 
               <div class="container">
                 <form action="/action_page.php">
-                  <label for="fname">Club Name</label>
-                  <input type="text" id="cname" name="clubname" placeholder="Your name..">
-
-                  <label for="county">County</label>
-                  <input type="text" id="county" name="county" placeholder="Enter your county here..">
-
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
-
-                  <input type="button" class="btn-primary btn-sm" value="Submit">
+                  <label style="color:#FFFFFF" for="fname">Club Name:</label>
+                  <br>
+                  <input type="text" id="contact" name="clubname" placeholder="Your name..">
+                  <br>
+                  <label style="color:#FFFFFF" for="county">Subject:</label>
+                  <br>
+                  <input type="text" id="contact" name="subject" placeholder="Enter subject here..">
+                  <br>
+                  <label style="color:#FFFFFF" for="subject">Content:</label>
+                  <br>
+                  <textarea id="contact" name="content" placeholder="Write something.." style="height:150px"></textarea>
+                  <br>
+                  <input type="button" class="btn-light btn" value="Submit">
                 </form>
               </div>
         </div>
@@ -142,7 +163,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Copyright &copy; GAA Ticket Scheduler - Ruairí Begley</p>
       </div>
       <!-- /.container -->
     </footer>
