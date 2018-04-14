@@ -12,14 +12,18 @@
 .aboutRight {
   float: right;
   width: 48%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 20px;
-  background: #00FF00;
+  background: #E8E8E8;
 }
 
 .aboutLeft {
   float: left;
   width: 50%;
-  background: #00FFFF;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: #E8E8E8;
 }
 
 .booking {
@@ -43,6 +47,7 @@
   font-weight: bold;
   text-align: left;
   text-decoration: underline;
+  margin-left: 20px;
 }
 
 .headingLight {
@@ -52,6 +57,7 @@
   text-align: left;
   text-decoration: underline;
   color: #FFFFFF;
+  margin-left: 20px;
 }
 
 input[type=text], input[type=date], select, textarea {
@@ -108,8 +114,19 @@ input#contact[type=text], textarea#contact {
 
 .card-title {
   text-decoration: underline;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .lead {
   color: #000000;
+}
+
+.card-img-top {
+  height: 250px;
+}
+
+.card-text {
+  font-size: 18px;
+  margin-top: 20px;
 }

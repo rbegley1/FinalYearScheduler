@@ -58,26 +58,26 @@
     <section id="home" class="bg-light">
       <div class="container">
         <div class="row">
-            <div class="card-group">
+            <div class="card-deck">
               <div class="card">
-                <img class="card-img-top" src="images/grey.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/step1.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Step 1</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">First you need to navigate to the bookings section of the website to begin filling out the form.</p>
                 </div>
               </div>
               <div class="card">
-                <img class="card-img-top" src="images/grey.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/step2.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Step 2</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Next fill out your club details on the form and select your desired draw dates.</p>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="images/grey.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Step 3</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text">Then just hit submit and that is your booking confirmed. If a draw isn't possible then you need to select different dates.</p>
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@
         </div>
 
         <div class="right">
-          <h1 class="heading">Fill out this form to make your booking!</h1>
+          <h1 class="headingLight">Book your draw now!</h1>
 
           <?php include('bookings.php'); ?>
         </div>
@@ -136,7 +136,7 @@
           </div>
           <div class="right">
             <h1 class="headingLight">Contact Us</h1>
-            <p style="color: #FFFFFF">If you have any queries or concerns don't be afraid to get in contact and we will do our best to
+            <p style="color: #FFFFFF; margin-left: 20px;">If you have any queries or concerns don't be afraid to get in contact and we will do our best to
               fix any problems you come across.</p>
 
               <div class="container">
