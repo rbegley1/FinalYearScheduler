@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-  console.log(distance(54.5943, 6.9290, 54.5949, 7.0462));
-  console.log(distance(54.5943, 6.9290, 54.4517, 7.4872));
 });
 
 function distance(lat1, lon1, lat2, lon2) {
