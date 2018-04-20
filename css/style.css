@@ -76,7 +76,7 @@ input[type=radio] {
   margin-left: 6px;
 }
 
-input[type=submit] {
+#submitBtn {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -85,7 +85,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+#submitBtn:hover {
     background-color: #45a049;
 }
 
