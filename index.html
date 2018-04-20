@@ -94,8 +94,32 @@
 
         <div class="right">
           <h1 class="headingLight">Book your draw now!</h1>
+          <form id='bookings'>
+            <label style="color:#FFFFFF" for="fname">Club Name:</label>
+            <br>
+            <input type="text" name="clubname" id="clubName" required>
+            <br>
+            <label style="color:#FFFFFF" for="fname">Club Address:</label>
+            <br>
+            <input type="text" name="address" id="clubAddress" placeholder="Enter address here.." required>
+            <br>
+            <label style="color:#FFFFFF" for="fname">Draw Type:</label>
+            <br>
+            <input type="radio" name="drawtype" value="local" required>
+            <label style="color:#FFFFFF" for="fname">Local</label>
 
-          <?php include('bookings.php'); ?>
+            <input type="radio" name="drawtype" value="grand" required>
+            <label style="color:#FFFFFF" for="fname">Grand</label>
+            <br>
+            <label style="color:#FFFFFF" for="fname">Start Date:</label>  <br>
+            <input type="date" name="startdate" id="startDate" required>
+            <br>
+            <label style="color:#FFFFFF" for="fname">End Date:</label>
+            <br>
+            <input type="date" name="enddate" id="endDate" required>
+            <br>
+            <button type="button" id="submitBtn" name="submitbutton" value="Place Booking">
+          </form>
         </div>
       </div>
         </div>
@@ -132,30 +156,15 @@
       <div class="container">
         <div class="row">
           <div class="left">
-            <p>This is an example.</p>
+            <h1 class="headingLight">Contact Details</h1>
+            <p style="color: #FFFFFF; margin-left: 20px;">If you have any queries you can get in touch.</p>
           </div>
           <div class="right">
-            <h1 class="headingLight">Contact Us</h1>
-            <p style="color: #FFFFFF; margin-left: 20px;">If you have any queries or concerns don't be afraid to get in contact and we will do our best to
-              fix any problems you come across.</p>
+            <h1 class="headingLight">Frequently Asked Questions</h1>
+            <p style="color: #FFFFFF; margin-left: 20px;">These are solutions to possible problems that you may come across.</p>
 
-              <div class="container">
-                <form action="/action_page.php">
-                  <label style="color:#FFFFFF" for="fname">Club Name:</label>
-                  <br>
-                  <input type="text" id="contact" name="clubname" placeholder="Your name..">
-                  <br>
-                  <label style="color:#FFFFFF" for="county">Subject:</label>
-                  <br>
-                  <input type="text" id="contact" name="subject" placeholder="Enter subject here..">
-                  <br>
-                  <label style="color:#FFFFFF" for="subject">Content:</label>
-                  <br>
-                  <textarea id="contact" name="content" placeholder="Write something.." style="height:150px"></textarea>
-                  <br>
-                  <input type="button" class="btn-light btn" value="Submit">
-                </form>
-              </div>
+
+          </div>
         </div>
       </div>
     </section>
