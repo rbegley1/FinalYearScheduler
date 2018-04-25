@@ -1,14 +1,17 @@
+/* Left div CSS */
 .left {
   float: left;
   width: 50%;
 }
 
+/* Right div CSS */
 .right {
   float: right;
   width: 48%;
   margin-left: 20px;
 }
 
+/* CSS for about section */
 .aboutRight {
   float: right;
   width: 48%;
@@ -26,6 +29,7 @@
   background: #E8E8E8;
 }
 
+/* Booking section CSS */
 .booking {
   float: right;
   width: 48%;
@@ -37,10 +41,12 @@
   font-size: 20px;
 }
 
+
 .bold {
   font-weight: bold;
 }
 
+/* CSS for section headings */
 .heading {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 26px;
@@ -50,6 +56,7 @@
   margin-left: 20px;
 }
 
+/* Light version of headings for grey sections */
 .headingLight {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 26px;
@@ -60,6 +67,7 @@
   margin-left: 20px;
 }
 
+/* Booking form styling */
 input[type=text], input[type=date], select, textarea {
     width: 75%;
     padding: 6px;
@@ -99,19 +107,23 @@ input#contact[type=text], textarea#contact {
     display: inline-block;
 }
 
+/* Map styling */
 #map {
   height: 500px;
   width: 50%;
 }
 
+/* Background colour */
 .bg-primary {
   background: #00a8f3 !important;
 }
 
+/* Logo styling for navbar */
 .logo {
   width: 8%;
 }
 
+/* Card Styling */
 .card-title {
   text-decoration: underline;
   font-size: 24px;
@@ -151,11 +163,13 @@ input#contact[type=text], textarea#contact {
   background-color: #00a8f3;
 }
 
+/* Paragraph with a margin */
 .margin {
   color: #FFFFFF;
   margin-left: 20px;
 }
 
+/* FAQ text styling */
 .faq {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 20px;
@@ -175,6 +189,7 @@ input#contact[type=text], textarea#contact {
   margin-left: 20px;
 }
 
+/* Contact section styling */
 .contactHeading {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 18px;;
@@ -185,6 +200,7 @@ input#contact[type=text], textarea#contact {
   margin-bottom: 0.5em;
 }
 
+/* Paragraph indent */
 .indentP {
   text-indent: 4.5em;
 }
@@ -194,6 +210,7 @@ input#contact[type=text], textarea#contact {
   border-color: #84888b;
 }
 
+/* Accordion Styling */
 .accordion-toggle {
   cursor: pointer;
 }
