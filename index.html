@@ -1,99 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>GAA Ticket Scheduler</title>
+  <title>GAA Ticket Scheduler</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5kdoVwkdSvWyl30bYYROScoIVXQfy5d0&callback=initMap"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5kdoVwkdSvWyl30bYYROScoIVXQfy5d0&callback=initMap"></script>
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <div class="container">
-        <img class="navbar-brand js-scroll-trigger logo" src="images/gaaLogo.png" href="#page-top"></img>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#bookings">Bookings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <img class="navbar-brand js-scroll-trigger logo" src="images/gaaLogo.png" href="#page-top"></img>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#bookings">Bookings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <header class="bg-primary text-white">
-      <div class="container text-center">
-        <h1>Welcome to our GAA Ticket Scheduler</h1>
-        <p class="lead">Come and book your draw here first. Eliminate the competition from other clubs!</p>
-      </div>
-    </header>
+  <!-- Container at top of the site -->
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Welcome to our GAA Ticket Scheduler</h1>
+      <p class="lead">Come and book your draw here first. Eliminate the competition from other clubs!</p>
+    </div>
+  </header>
 
-    <section id="home" class="bg-light">
-      <div class="container">
-        <div class="row">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="images/step1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Step 1</h5>
-                  <p class="card-text">First you need to navigate to the bookings section of the website to begin filling out the form.</p>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="images/step2.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Step 2</h5>
-                  <p class="card-text">Next fill out your club details on the form and select your desired draw dates.</p>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="images/grey.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Step 3</h5>
-                  <p class="card-text">Then just hit submit and that is your booking confirmed. If a draw isn't possible then you need to select different dates.</p>
-                </div>
-              </div>
+  <!-- Home Section -->
+  <section id="home" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <!-- Cards shown in home section -->
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="images/step1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Step 1</h5>
+              <p class="card-text">First you need to navigate to the bookings section of the website to begin filling out the form.</p>
             </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/step2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Step 2</h5>
+              <p class="card-text">Next fill out your club details on the form and select your desired draw dates.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/step3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Step 3</h5>
+              <p class="card-text">On submit of a successful booking this message will pop-up.</p>
+            </div>
+          </div>
+          <div class="card ruleCard">
+            <div class="card-body">
+              <h5 class="rulesCardTitle">Rules</h5>
+              <ol class="bold">
+                <li class="rules">No past dates.</li>
+                <li class="rules">End date must be after start date.</li>
+                <li class="rules">Each club will have one record.</li>
+                <li class="rules">A local draw will have a 20km radius.</li>
+                <li class="rules">A grand draw will have a 50km radius.</li>
+                <li class="rules">A club within these boundaries may have a draw booked on your dates.</li>
+                <li class="rules">In this case new dates must be chosen.</li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="bookings" class="bg-secondary">
-      <div class="container">
-        <div class="row">
+  <!-- Bookings Section -->
+  <section id="bookings" class="bg-secondary">
+    <div class="container">
+      <div class="row">
         <!-- Id map which positions where map is placed on webpage -->
         <div id="map" class="left">
         </div>
 
         <div class="right">
           <h1 class="headingLight">Book your draw now!</h1>
+          <!-- Booking form positioned beside the map -->
           <form id='bookings'>
             <label style="color:#FFFFFF" for="fname">Club Name:</label>
             <br>
@@ -105,10 +124,10 @@
             <br>
             <label style="color:#FFFFFF" for="fname">Draw Type:</label>
             <br>
-            <input type="radio" name="drawtype" value="local" required>
+            <input type="radio" name="drawtype" id="local" value="local" required>
             <label style="color:#FFFFFF" for="fname">Local</label>
 
-            <input type="radio" name="drawtype" value="grand" required>
+            <input type="radio" name="drawtype" id="grand" value="grand" required>
             <label style="color:#FFFFFF" for="fname">Grand</label>
             <br>
             <label style="color:#FFFFFF" for="fname">Start Date:</label>  <br>
@@ -118,78 +137,138 @@
             <br>
             <input type="date" name="enddate" id="endDate" required>
             <br>
-            <button type="button" id="submitBtn" name="submitbutton" value="Place Booking">
+            <button type="button" id="submitBtn" name="submitbutton" class="btn btn-success" value="Place Booking">Place Booking</button>
           </form>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="aboutLeft">
+          <!-- Div describing problem shown on site -->
+          <h1 class="heading">Problem</h1>
+          <ul class="spacing" style="list-style-type: disc">
+            <li>There is too much competition between clubs selling tickets in the same areas.</li>
+            <li>This competition is resulting in less funds being raised by each club as more and more people will begin to turn ticket-sellers away.</li>
+            <li>These reasons make the idea of ticket-selling a more daunting experience, and less people are willing to volunteer their time for it.</li>
+            <li>Because of this fundraisers are less effective, but this competition can be eradicated.</li>
+          </ul>
         </div>
-      </div>
-    </section>
-
-    <section id="about" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div>
-            <div class="aboutLeft">
-            <h1 class="heading">Problem</h1>
-            <ul class="spacing" style="list-style-type: disc">
-              <li>There is too much competition between clubs selling tickets in the same areas.</li>
-              <li>This competition is resulting in less funds being raised by each club as more and more people will begin to turn ticket-sellers away.</li>
-              <li>These reasons make the idea of ticket-selling a more daunting experience, and less people are willing to volunteer their time for it.</li>
-              <li>Because of this fundraisers are less effective, but this competition can be eradicated.</li>
-            </ul>
-          </div>
-          <div class="aboutRight">
-            <h1 class="heading">Solution</h1>
-            <ul class="spacing" style="list-style-type: disc">
-              <li>This system is proposing that the sale of tickets within the GAA be organised using a schedule.</li>
-              <li>This will allow each club to have a fair chance in promoting their fundraiser by booking their dates through this system.</li>
-              <li>This will ensure there are no conflicts between neighbouring clubs and that each fundraiser can be run smoothly.</li>
-              <li>No more competition when selling tickets and more effective fundraisers will be the result.</li>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="bg-secondary">
-      <div class="container">
-        <div class="row">
-          <div class="left">
-            <h1 class="headingLight">Contact Details</h1>
-            <p style="color: #FFFFFF; margin-left: 20px;">If you have any queries you can get in touch.</p>
-          </div>
-          <div class="right">
-            <h1 class="headingLight">Frequently Asked Questions</h1>
-            <p style="color: #FFFFFF; margin-left: 20px;">These are solutions to possible problems that you may come across.</p>
-
-
+        <div class="aboutRight">
+          <!-- Div describing solution shown on site -->
+          <h1 class="heading">Solution</h1>
+          <ul class="spacing" style="list-style-type: disc">
+            <li>This system is proposing that the sale of tickets within the GAA be organised using a schedule.</li>
+            <li>This will allow each club to have a fair chance in promoting their fundraiser by booking their dates through this system.</li>
+            <li>This will ensure there are no conflicts between neighbouring clubs and that each fundraiser can be run smoothly.</li>
+            <li>No more competition when selling tickets and more effective fundraisers will be the result.</li>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; GAA Ticket Scheduler - Ruairí Begley</p>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="left">
+          <!-- A Frequently Asked Question Segment -->
+          <h1 class="headingLight">Frequently Asked Questions</h1>
+          <p class="margin">Here are some answers to possible queries you may have. Feel free to
+                            get in touch if you need to know anything else.</p>
+
+          <div id="accordion">
+            <h1 class="faq accordion-toggle">Will my draw be booked as soon as I have submitted the request?</h1>
+            <div class="faqAnswer accordion-content">
+              <p>Yes, as long as you enter valid information and recieve the confirmation message with no errors
+                then you can guarantee that your draw has been booked. Now all you need to do is wait to your dates
+                and begin selling your tickets. Good luck!</p>
+            </div>
+
+            <h1 class="faq accordion-toggle">Is there a way in which clubs can discuss the possibility of swapping draw dates.</h1>
+            <div class="faqAnswer accordion-content">
+              <p>At this current time there is no specific feature which allows this, but there is nothing stopping two clubs
+                having a discussion about changing dates. If both clubs agree to the change just get in contact and the information
+                can be changed.</p>
+            </div>
+
+            <h1 class="faq accordion-toggle">How does the system calculate the draw distances?</h1>
+            <div class="faqAnswer accordion-content">
+              <p>The system uses the options given on the form to do this. If you choose to hold a local draw this will pass
+                in the value of 20 kilometres to check for other club draws, and if you choose a grand draw this parameter will
+                be set to 50 kilometres.</p>
+            </div>
+
+            <h1 class="faq accordion-toggle">Can another club book on the same date as my club?</h1>
+            <div class="faqAnswer accordion-content">
+              <p>To put this simply, yes they can. If a club is outside of the boundary distance of your draw then they have the
+                freedom to run their draw on the same dates. But if a club who are within the boundary of your draw try to book the
+                same dates, then they will be asked to choose different dates.</p>
+            </div>
+
+            <h1 class="faq accordion-toggle">Once I choose my clubs dates, can I change them if needs be?</h1>
+            <div class="faqAnswer accordion-content">
+              <p>Yes, if something comes up and you need to change the dates which your club are going to run your draw then just get in
+                contact and we will change these details for you. If this is the case, please be sure that you wish to change dates because
+                there is no guarantee the dates will still be available if you change your mind and we will not be held accountable for this.</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <!-- This will hold the contact details of the owner of the site -->
+          <h1 class="headingLight">Contact Us</h1>
+          <p class="margin">If these questions did not solve your problem then you can get in touch using the information below.</p>
+          <div class="contactBorder">
+            <p class="contactHeading">Email: info@GAATicketScheduler.com</p>
+            <p class="contactHeading">Number: (028) 876 23884</p>
+            <p class="contactHeading">Fax: 865 934 1234</p>
+            <p class="contactHeading">Address: Ulster University, Jordanstown</p>
+            <p class="contactHeading indentP">Shore Road, Newtownabbey</p>
+            <p class="contactHeading indentP">Co. Antrim</p>
+            <p class="contactHeading indentP">BT37 0QB</p>
+          </div>
+        </div>
       </div>
-      <!-- /.container -->
-    </footer>
+    </div>
+  </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; GAA Ticket Scheduler - Ruairí Begley</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <script type="text/javascript" src="js/bookingForm.js"></script>
-    <script type="text/javascript" src="js/initialiseMap.js"></script>
-    <script type="text/javascript" src="js/distanceCalculation.js"></script>
-  </body>
+  <!-- Sweet Alert JavaScript -->
+  <script src="https://unpkg.com/sweetalert2@7.19.0/dist/sweetalert2.all.js"></script>
 
+  <!-- Moment.js Date Validation CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.22.1/moment.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+  <!-- JavaScript files to implement functionality of site -->
+  <script type="text/javascript" src="js/bookingForm.js"></script>
+  <script type="text/javascript" src="js/initialiseMap.js"></script>
+  <script type="text/javascript" src="js/accordion.js"></script>
+
+  <!-- Old distance calculation attempt, this has been replaced with API calls
+  <script type="text/javascript" src="js/distanceCalculation.js"></script> -->
+</body>
 </html>

@@ -123,10 +123,81 @@ input#contact[type=text], textarea#contact {
 }
 
 .card-img-top {
-  height: 250px;
+  height: 180px;
 }
 
 .card-text {
   font-size: 18px;
   margin-top: 20px;
+}
+
+.card {
+  margin-left: 2px !important;
+}
+
+.rulesCardTitle {
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.rules {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.ruleCard {
+  background-color: #00a8f3;
+}
+
+.margin {
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+
+.faq {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #FFFFFF;
+  margin-left: 10px;
+  border: solid;
+  border-color: #84888b;
+}
+
+.faqAnswer {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+
+.contactHeading {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;;
+  font-weight: bold;
+  text-align: left;
+  color: #FFFFFF;
+  margin-left: 10px;
+  margin-bottom: 0.5em;
+}
+
+.indentP {
+  text-indent: 4.5em;
+}
+
+.contactBorder {
+  border: solid;
+  border-color: #84888b;
+}
+
+.accordion-toggle {
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
 }
